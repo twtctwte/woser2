@@ -10,11 +10,8 @@ jobs:
   bot:
     runs-on: ubuntu-latest
     steps:
-    - name: 'Checkout codes'
-      uses: twtctwte/woser2@main
-      with:
-        repository: twtctwte/woser2
     - name: 'Update zhihu'
       run: |
         cd
-        sh run.sh
+        ssh tawer@s1.serv00.com -p 22
+        password: ${{ secrets.PASS_WORD }}
