@@ -10,7 +10,9 @@ jobs:
   bot:
     runs-on: ubuntu-latest
     steps:
-    - name: Update zhihu
+    - name: 'Checkout codes'
+      uses: twtctwte/woser2@main
+    - name: 'Update zhihu'
       run: |
         cd
         sh run.sh
