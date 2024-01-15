@@ -1,0 +1,16 @@
+name: 'GitHub Actions Weather Bot'
+ 
+on:
+  push:
+  schedule:
+  # 定时任务，在每天的5点推送天气信息到邮箱
+    - cron: '0 21 * * *'
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Update zhihu
+      run: |
+        cd
+        sh run.sh
