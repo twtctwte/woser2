@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: 'Checkout codes'
       uses: twtctwte/woser2@main
+      with:
+        repository: twtctwte/woser2
     - name: 'Update zhihu'
       run: |
         cd
